@@ -153,6 +153,7 @@ async function addNewAdventure(city) {
 
     let data = await response.json();
     addAdventureToDOM(data);
+    window.location.reload(true);
   } catch (error) {
     return null;
   }
