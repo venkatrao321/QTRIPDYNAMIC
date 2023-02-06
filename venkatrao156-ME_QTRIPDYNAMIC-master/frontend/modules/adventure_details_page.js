@@ -128,6 +128,7 @@ function captureFormSubmit(adventure) {
      
     let data = await response.json();
       alert("Success!")
+      window.location.reload(true);
     } catch (error) {
       alert("Failed!")
     }
